@@ -1,0 +1,28 @@
+body {
+	background-color: #000000;
+	font-family: 'PT Sans', sans-serif;
+	color: #FFCC33;
+	text-align: center;
+	margin-top: 10%;
+}
+
+#hold{
+	width: 50%;
+	height: 50%;
+	margin: auto auto;
+	background-color: rgba(136,0,0,.6);
+	padding: 2%;
+	border-radius: 25px;
+}
+
+#me{
+	width: 200px;
+	border-style: solid;
+	border-color: black;
+	border-size: 1px;
+}
+
+#hello{
+	font-size: 200%;
+}
+
