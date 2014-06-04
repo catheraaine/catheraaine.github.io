@@ -1,7 +1,7 @@
 body {
-	background-color: #000000;
+	background-color: #33CCFF;
 	font-family: 'PT Sans', sans-serif;
-	color: #FFCC33;
+	color: #3333CC;
 	text-align: center;
 	margin-top: 10%;
 }
@@ -10,7 +10,7 @@ body {
 	width: 50%;
 	height: 50%;
 	margin: auto auto;
-	background-color: rgba(136,0,0,.6);
+	background-color: rgba(0,0,102,.1); 
 	padding: 2%;
 	border-radius: 25px;
 }
@@ -25,4 +25,9 @@ body {
 #hello{
 	font-size: 200%;
 }
+
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
 
