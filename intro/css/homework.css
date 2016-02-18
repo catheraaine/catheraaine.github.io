@@ -1,0 +1,72 @@
+body {
+	background-color: #f05b62;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.container {
+	width: 75%;
+	margin: auto auto;
+	padding: 5%;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 20px;
+	min-height: 600px;
+}
+
+li {
+	font-size: 120%;
+}
+
+.gdi-logo{
+	float: left;
+	width: 140px;
+	padding: 20px;
+}
+
+.bill {
+	margin: auto auto;
+	display: block;
+	width: 400px;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+h1 {
+	color: #f05b62;
+}
+
+h2 {
+	color: #f05b62;
+}
+
+header {
+	clear: both;
+	
+}
+
+.lists{
+	clear: both;
+	margin: auto auto;
+}
+
+.column{
+	width: 25%;
+	min-height: 400px;
+	float: left;
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
