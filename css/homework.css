@@ -9,6 +9,7 @@ body {
 	padding: 5%;
 	background-color: rgba(255,255,255,.7);
 	border-radius: 20px;
+	min-height: 600px;
 }
 
 li {
@@ -36,3 +37,48 @@ h1 {
 h2 {
 	color: #f05b62;
 }
+
+header {
+	clear: both;
+	margin-bottom: 2em;
+}
+
+.lists{
+	clear: both;
+	margin: auto auto;
+}
+
+.column{
+	width: 25%;
+	min-height: 400px;
+	float: left;
+}
+
+li {
+	padding-top: .2em;
+	padding-bottom: .1em;
+}
+
+a:link {
+ 	color: #22867F;
+ 	text-decoration: none;
+ 	border-bottom: 1px solid #22867F;
+}
+
+a:visited {
+	color: #22867F;
+}
+
+a:hover {
+	color: #F05B62;
+	border-bottom: 1px dashed #F05B62;
+}
+
+a:active {
+	color: #ffffff;
+}
+
+footer{
+	text-align: center;
+}
+
