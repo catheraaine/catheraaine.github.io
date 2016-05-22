@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "ASAP";
+  src: url(../assets/fonts/Asap-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Racing Sans One";
+  src: url(../assets/fonts/RacingSansOne-Regular.ttf);
+}
+
+@mixin nav-button {
+  a{
+    &:link, &:visited {
+      color: #000;
+      text-transform: uppercase;
+      padding: .25em .5em;
+        transition: all .3s fade;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+      opacity:0.7;
+    }
+
+    &:hover {
+      border-top: 3px solid $primary;
+      border-bottom: 3px solid $primary;
+      opacity:1;
+    }
+  }
+}

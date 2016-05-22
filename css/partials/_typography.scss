@@ -1,0 +1,36 @@
+.headline {
+  font-size: 3em;
+  visibility: hidden;
+}
+
+.quote {
+  background-color: $black-transparent;
+  box-sizing: border-box;
+  padding: 2.5em;
+  color: $lightest;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  @media screen and (min-width: $break-small) {
+    width: 40%;
+    left: calc(30% - (#{$nav-width}/2));
+  }
+
+  small {
+    right: 4em;
+    position: absolute;
+    @media screen and (min-width: $break-large) {
+      font-size: 1em;
+    }
+  }
+
+  blockquote {
+    @media screen and (min-width: $break-small) {
+      font-size: 1.5em;
+    }
+    @media screen and (min-width: $break-large) {
+      font-size: 2em;
+    }
+  }
+}

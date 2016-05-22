@@ -1,0 +1,63 @@
+// GLOBAL STYLES
+body {
+  font-family: $primary-font;
+  color: $darkest;
+}
+
+h1, h2 {
+  font-family: $secondary-font;
+  color: $lightest;
+}
+
+.content{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#header {
+  background: url(../assets/images/arcade-bw.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about, #work, #contact {
+  background-color: $lightest;
+}
+
+
+#contact {
+  min-height: 100%;
+  padding-top: 5em;
+  background: url(../assets/images/cat-mail.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portrait {
+  width: 18em;
+  box-sizing: border-box;
+  border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  border: 5px solid $primary;
+  display: block;
+  margin: .5em auto;
+}
+
+p a {
+  &:link, &:visited {
+    color: $primary;
+
+    border-bottom: 1px solid $primary;
+  }
+
+  &:hover, &:active {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+    font-style: italic;
+  }
+}
