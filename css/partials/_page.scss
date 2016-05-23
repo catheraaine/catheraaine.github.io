@@ -98,20 +98,20 @@
 .social-icon {
   height: 3em;
 
-  #facebook-icon, #twitter-icon, #linkedin-icon, #github-icon  {
+  #facebook-icon, #twitter-icon, #linkedin-icon, #github-icon, #codepen-icon, #insta-icon  {
     fill: $lightest;
 
   }
 
   &:hover {
-    #facebook-icon, #linkedin-icon {
+    #github-icon, #linkedin-icon  {
       fill: $accent;
     }
-    #twitter-icon {
+    #twitter-icon, #insta-icon {
       fill: $primary;
     }
 
-    #github-icon {
+    #codepen-icon, #facebook-icon,  {
       fill: $highlight;
     }
 

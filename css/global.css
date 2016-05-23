@@ -198,13 +198,13 @@ p a:hover, p a:active {
 
 .social-icon {
   height: 3em; }
-  .social-icon #facebook-icon, .social-icon #twitter-icon, .social-icon #linkedin-icon, .social-icon #github-icon {
+  .social-icon #facebook-icon, .social-icon #twitter-icon, .social-icon #linkedin-icon, .social-icon #github-icon, .social-icon #codepen-icon, .social-icon #insta-icon {
     fill: #fff; }
-  .social-icon:hover #facebook-icon, .social-icon:hover #linkedin-icon {
+  .social-icon:hover #github-icon, .social-icon:hover #linkedin-icon {
     fill: #D75F74; }
-  .social-icon:hover #twitter-icon {
+  .social-icon:hover #twitter-icon, .social-icon:hover #insta-icon {
     fill: #0093A0; }
-  .social-icon:hover #github-icon {
+  .social-icon:hover #codepen-icon, .social-icon:hover #facebook-icon {
     fill: #EAB98C; }
 
 /*# sourceMappingURL=global.css.map */
