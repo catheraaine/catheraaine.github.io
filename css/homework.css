@@ -1,15 +1,13 @@
 body {
-	background-color: #f05b62;
-	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: white;
+	font-family: 'PT Sans Narrow', Helvetica, sans-serif;
 }
 
 .container {
 	width: 75%;
-	margin: auto auto;
-	padding: 5%;
-	background-color: rgba(255,255,255,.7);
-	border-radius: 20px;
-	min-height: 600px;
+	margin: 2em auto;
+	padding: 3.5em;
+	min-height: 40em;
 }
 
 li {
@@ -18,8 +16,8 @@ li {
 
 .gdi-logo{
 	float: left;
-	width: 140px;
-	padding: 20px;
+	width: 8em;
+	padding: 2em;
 }
 
 .bill {
@@ -27,7 +25,6 @@ li {
 	display: block;
 	width: 400px;
 	border: 3px solid black;
-	border-radius: 20px;
 }
 
 h1 {
@@ -82,3 +79,6 @@ footer{
 	text-align: center;
 }
 
+.homework-heading {
+	clear: both;
+}
