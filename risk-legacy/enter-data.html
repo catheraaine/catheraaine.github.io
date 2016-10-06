@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="global.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>
+    Risk Legacy
+  </title>
+</head>
+
+
+<body>
+  <div class="content">
+    <header>
+      <h1> Risk <span class="legacy">Legacy</span> </h1>
+      <ul>
+        <li><a href="index.html">Map</a></li>
+        <li><a href="factions.html">Factions</a></li>
+      </ul>
+    </header>
+
+    <div class="form-container">
+      <section class="form-entry current-play">
+        <h2>Current Play</h2>
+        <form>
+          <h3>Map Status</h3>
+          <label for="country">Country: </label>
+          <select name="country">
+            <optgroup label="Africa">
+              <option>Central Aftica</option>
+              <option>East Africa</option>
+              <option>Egypt</option>
+              <option>Madagascar</option>
+              <option>North Africa</option>
+              <option>South Africa</option>
+            </optgroup>
+
+            <optgroup label="Asia">
+              <option>Afghanistan</option>
+              <option>China</option>
+              <option>India</option>
+              <option>Irkustk</option>
+              <option>Japan</option>
+              <option>Kamchatka</option>
+              <option>Middle East</option>
+              <option>Mongolia</option>
+              <option>Siberia</option>
+              <option>South East Asia</option>
+              <option>Ural</option>
+              <option>Yakutsk</option>
+            </optgroup>
+
+            <optgroup label="Australia">
+              <option>Eastern Australia</option>
+              <option>Indonesia</option>
+              <option>New Guinea</option>
+              <option>Western Australia</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+              <option>Great Britain</option>
+              <option>Iceland</option>
+              <option>Northern Europe</option>
+              <option>Russia</option>
+              <option>Scandinavia</option>
+              <option>Southern Europe</option>
+              <option>Western Europe</option>
+            </optgroup>
+
+            <optgroup label="North America">
+
+              <option>Alaska</option>
+              <option>Alberta</option>
+              <option>Central America</option>
+              <option>Eastern Canada</option>
+              <option>Eastern United States</option>
+              <option>Greenland</option>
+              <option>Northwest Territory</option>
+              <option>Ontario</option>
+              <option>Western United States</option>
+            </optgroup>
+
+            <optgroup label="South America">
+              <option>Argentina</option>
+              <option>Brazil</option>
+              <option>Peru</option>
+              <option>Venezuela</option>
+            </optgroup>
+          </select>
+          <ul class="radio-list">
+            <li><label for="factions">Faction Control:</label></li>
+            <li><input type="radio" name="factions" value="mech"> Die Mechaniker</li>
+            <li><input type="radio" name="factions" value="bear"> Enclave of the Bear</li>
+            <li><input type="radio" name="factions" value="imp"> Imperial Balkania</li>
+            <li><input type="radio" name="factions" value="khan"> Khan Industries</li>
+            <li><input type="radio" name="factions" value="saha"> The Saharan Republic</li>
+          </ul>
+          <label for="troops">Current Troops:</label>
+          <input type="text" name="troops" size="5" value="">
+          <input type="submit" name="current-play" value="Update Map">
+        </form>
+      </section>
+
+      <section class="form-entry start-of-play">
+        <h2>Start of Play</h2>
+        <form>
+          <h3>Headquarters</h3>
+          <ul>
+            <li>
+              <label for="mech-hq">Die Mechaniker:</label>
+              <select name="mech-hq">
+                <optgroup label="Africa">
+                  <option>Central Aftica</option>
+                  <option>East Africa</option>
+                  <option>Egypt</option>
+                  <option>Madagascar</option>
+                  <option>North Africa</option>
+                  <option>South Africa</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                  <option>Afghanistan</option>
+                  <option>China</option>
+                  <option>India</option>
+                  <option>Irkustk</option>
+                  <option>Japan</option>
+                  <option>Kamchatka</option>
+                  <option>Middle East</option>
+                  <option>Mongolia</option>
+                  <option>Siberia</option>
+                  <option>South East Asia</option>
+                  <option>Ural</option>
+                  <option>Yakutsk</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option>Eastern Australia</option>
+                  <option>Indonesia</option>
+                  <option>New Guinea</option>
+                  <option>Western Australia</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option>Great Britain</option>
+                  <option>Iceland</option>
+                  <option>Northern Europe</option>
+                  <option>Russia</option>
+                  <option>Scandinavia</option>
+                  <option>Southern Europe</option>
+                  <option>Western Europe</option>
+                </optgroup>
+
+                <optgroup label="North America">
+
+                  <option>Alaska</option>
+                  <option>Alberta</option>
+                  <option>Central America</option>
+                  <option>Eastern Canada</option>
+                  <option>Eastern United States</option>
+                  <option>Greenland</option>
+                  <option>Northwest Territory</option>
+                  <option>Ontario</option>
+                  <option>Western United States</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option>Argentina</option>
+                  <option>Brazil</option>
+                  <option>Peru</option>
+                  <option>Venezuela</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <label for="bear-hq">Enclave of the Bear:</label>
+              <select name="bear-hq">
+                <optgroup label="Africa">
+                  <option>Central Aftica</option>
+                  <option>East Africa</option>
+                  <option>Egypt</option>
+                  <option>Madagascar</option>
+                  <option>North Africa</option>
+                  <option>South Africa</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                  <option>Afghanistan</option>
+                  <option>China</option>
+                  <option>India</option>
+                  <option>Irkustk</option>
+                  <option>Japan</option>
+                  <option>Kamchatka</option>
+                  <option>Middle East</option>
+                  <option>Mongolia</option>
+                  <option>Siberia</option>
+                  <option>South East Asia</option>
+                  <option>Ural</option>
+                  <option>Yakutsk</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option>Eastern Australia</option>
+                  <option>Indonesia</option>
+                  <option>New Guinea</option>
+                  <option>Western Australia</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option>Great Britain</option>
+                  <option>Iceland</option>
+                  <option>Northern Europe</option>
+                  <option>Russia</option>
+                  <option>Scandinavia</option>
+                  <option>Southern Europe</option>
+                  <option>Western Europe</option>
+                </optgroup>
+
+                <optgroup label="North America">
+
+                  <option>Alaska</option>
+                  <option>Alberta</option>
+                  <option>Central America</option>
+                  <option>Eastern Canada</option>
+                  <option>Eastern United States</option>
+                  <option>Greenland</option>
+                  <option>Northwest Territory</option>
+                  <option>Ontario</option>
+                  <option>Western United States</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option>Argentina</option>
+                  <option>Brazil</option>
+                  <option>Peru</option>
+                  <option>Venezuela</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <label for="imp-hq">Imperial Balkania:</label>
+              <select name="imp-hq">
+                <optgroup label="Africa">
+                  <option>Central Aftica</option>
+                  <option>East Africa</option>
+                  <option>Egypt</option>
+                  <option>Madagascar</option>
+                  <option>North Africa</option>
+                  <option>South Africa</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                  <option>Afghanistan</option>
+                  <option>China</option>
+                  <option>India</option>
+                  <option>Irkustk</option>
+                  <option>Japan</option>
+                  <option>Kamchatka</option>
+                  <option>Middle East</option>
+                  <option>Mongolia</option>
+                  <option>Siberia</option>
+                  <option>South East Asia</option>
+                  <option>Ural</option>
+                  <option>Yakutsk</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option>Eastern Australia</option>
+                  <option>Indonesia</option>
+                  <option>New Guinea</option>
+                  <option>Western Australia</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option>Great Britain</option>
+                  <option>Iceland</option>
+                  <option>Northern Europe</option>
+                  <option>Russia</option>
+                  <option>Scandinavia</option>
+                  <option>Southern Europe</option>
+                  <option>Western Europe</option>
+                </optgroup>
+
+                <optgroup label="North America">
+
+                  <option>Alaska</option>
+                  <option>Alberta</option>
+                  <option>Central America</option>
+                  <option>Eastern Canada</option>
+                  <option>Eastern United States</option>
+                  <option>Greenland</option>
+                  <option>Northwest Territory</option>
+                  <option>Ontario</option>
+                  <option>Western United States</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option>Argentina</option>
+                  <option>Brazil</option>
+                  <option>Peru</option>
+                  <option>Venezuela</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <label for="khan-hq">Khan Industries:</label>
+              <select name="khan-hq">
+                <optgroup label="Africa">
+                  <option>Central Aftica</option>
+                  <option>East Africa</option>
+                  <option>Egypt</option>
+                  <option>Madagascar</option>
+                  <option>North Africa</option>
+                  <option>South Africa</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                  <option>Afghanistan</option>
+                  <option>China</option>
+                  <option>India</option>
+                  <option>Irkustk</option>
+                  <option>Japan</option>
+                  <option>Kamchatka</option>
+                  <option>Middle East</option>
+                  <option>Mongolia</option>
+                  <option>Siberia</option>
+                  <option>South East Asia</option>
+                  <option>Ural</option>
+                  <option>Yakutsk</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option>Eastern Australia</option>
+                  <option>Indonesia</option>
+                  <option>New Guinea</option>
+                  <option>Western Australia</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option>Great Britain</option>
+                  <option>Iceland</option>
+                  <option>Northern Europe</option>
+                  <option>Russia</option>
+                  <option>Scandinavia</option>
+                  <option>Southern Europe</option>
+                  <option>Western Europe</option>
+                </optgroup>
+
+                <optgroup label="North America">
+
+                  <option>Alaska</option>
+                  <option>Alberta</option>
+                  <option>Central America</option>
+                  <option>Eastern Canada</option>
+                  <option>Eastern United States</option>
+                  <option>Greenland</option>
+                  <option>Northwest Territory</option>
+                  <option>Ontario</option>
+                  <option>Western United States</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option>Argentina</option>
+                  <option>Brazil</option>
+                  <option>Peru</option>
+                  <option>Venezuela</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <label for="saha-hq">The Saharan Republic:</label>
+              <select name="saha-hq">
+                <optgroup label="Africa">
+                  <option>Central Aftica</option>
+                  <option>East Africa</option>
+                  <option>Egypt</option>
+                  <option>Madagascar</option>
+                  <option>North Africa</option>
+                  <option>South Africa</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                  <option>Afghanistan</option>
+                  <option>China</option>
+                  <option>India</option>
+                  <option>Irkustk</option>
+                  <option>Japan</option>
+                  <option>Kamchatka</option>
+                  <option>Middle East</option>
+                  <option>Mongolia</option>
+                  <option>Siberia</option>
+                  <option>South East Asia</option>
+                  <option>Ural</option>
+                  <option>Yakutsk</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option>Eastern Australia</option>
+                  <option>Indonesia</option>
+                  <option>New Guinea</option>
+                  <option>Western Australia</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option>Great Britain</option>
+                  <option>Iceland</option>
+                  <option>Northern Europe</option>
+                  <option>Russia</option>
+                  <option>Scandinavia</option>
+                  <option>Southern Europe</option>
+                  <option>Western Europe</option>
+                </optgroup>
+
+                <optgroup label="North America">
+
+                  <option>Alaska</option>
+                  <option>Alberta</option>
+                  <option>Central America</option>
+                  <option>Eastern Canada</option>
+                  <option>Eastern United States</option>
+                  <option>Greenland</option>
+                  <option>Northwest Territory</option>
+                  <option>Ontario</option>
+                  <option>Western United States</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option>Argentina</option>
+                  <option>Brazil</option>
+                  <option>Peru</option>
+                  <option>Venezuela</option>
+                </optgroup>
+              </select>
+            </li>
+          </ul>
+          <input type="submit" name="start-of-play" value="Update Map">
+
+        </form>
+      </section>
+
+      <section class="form-entry ongoing-play">
+        <h2>Ongoing Play</h2>
+
+        <form class="form-entry-sub">
+          <h3>Scars, Cities, and Other Marks</h3>
+          <label for="ongoing-country">Country:</label>
+          <select name="ongoing-country">
+            <optgroup label="Africa">
+              <option>Central Africa</option>
+              <option>East Africa</option>
+              <option>Egypt</option>
+              <option>Madagascar</option>
+              <option>North Africa</option>
+              <option>South Africa</option>
+            </optgroup>
+
+            <optgroup label="Asia">
+              <option>Afghanistan</option>
+              <option>China</option>
+              <option>India</option>
+              <option>Irkustk</option>
+              <option>Japan</option>
+              <option>Kamchatka</option>
+              <option>Middle East</option>
+              <option>Mongolia</option>
+              <option>Siberia</option>
+              <option>South East Asia</option>
+              <option>Ural</option>
+              <option>Yakutsk</option>
+            </optgroup>
+
+            <optgroup label="Australia">
+              <option>Eastern Australia</option>
+              <option>Indonesia</option>
+              <option>New Guinea</option>
+              <option>Western Australia</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+              <option>Great Britain</option>
+              <option>Iceland</option>
+              <option>Northern Europe</option>
+              <option>Russia</option>
+              <option>Scandinavia</option>
+              <option>Southern Europe</option>
+              <option>Western Europe</option>
+            </optgroup>
+
+            <optgroup label="North America">
+
+              <option>Alaska</option>
+              <option>Alberta</option>
+              <option>Central America</option>
+              <option>Eastern Canada</option>
+              <option>Eastern United States</option>
+              <option>Greenland</option>
+              <option>Northwest Territory</option>
+              <option>Ontario</option>
+              <option>Western United States</option>
+            </optgroup>
+
+            <optgroup label="South America">
+              <option>Argentina</option>
+              <option>Brazil</option>
+              <option>Peru</option>
+              <option>Venezuela</option>
+            </optgroup>
+          </select>
+
+          <ul>
+            <li>
+              <label for="scar">Scar:</label>
+              <select name="scar">
+                <option>Ammo Shortage</option>
+                <option>Bunker</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="city">City:</label>
+              <select name="city">
+                <option>Major City</option>
+                <option>Fortified Major City</option>
+                <option>Minor City</option>
+                <option>Fortified Major City</option>
+              </select>
+            </li>
+          </ul>
+          <input type="submit" name="ongoing-play-country" value="Update Map">
+        </form>
+
+        <form class="form-entry-sub">
+          <h3>Continent Control</h3>
+          <label for="continent">Continent:</label>
+          <select name="continent">
+            <option>Africa</option>
+            <option>Asia</option>
+            <option>Australia</option>
+            <option>Europe</option>
+            <option>North America</option>
+            <option>South America</option>
+          </select>
+
+          <ul>
+            <li>
+              <label for="named-continent">Named:</label>
+              <input type="text" name="named-continent">
+            </li>
+            <li>
+              <label for="named-by">Named By (Initials):</label>
+              <input type="text" name="named-by" size="4" value="">
+            </li>
+          </ul>
+
+          <input type="submit" name="ongoing-play-continent" value="Update Map">
+        </form>
+
+        <form class="form-entry-sub">
+          <h3>Winners</h3>
+          <ul>
+            <li>
+              <label for="game-number">Game Number: </label>
+              <select name="game-number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+              </select>
+            </li>
+            <li>
+              <label for="winner-name">Winner's Name:</label>
+              <input type="text" name="winner-name" size="20">
+            </li>
+          </ul>
+          <input type="submit" name="ongoing-play-winners" value="Update Map">
+
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+/************************************
+Color Guide
+************************************/
+/*
+purple: #5F0F40
+red: #9A031E
+orange: #E36414
+blue: #0F4C5C
+parchment: #F1F1D4
+Enclave: #69793E
+Saharan: #FB8B24
+Mech: #BA4745
+Khan: #514A47
+Imperial: #6D4168
+*/
+
+@font-face {
+  font-family: 'Legacy';
+  src: url('fonts/brush.ttf');
+}
+
+@font-face {
+  font-family: 'Risk Header';
+  src: url('fonts/serif.ttf');
+}
+
+/************************************
+Layout
+************************************/
+
+body {
+  background-color: #F1F1D4;
+  color: #5F0F40;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'Risk Header', serif;
+  color: #9A031E;
+  margin: 0;
+  padding: 0;
+  font-size: 300%;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+
+}
+header ul li a, header ul li a:visited{
+  color: #FFB877;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 10em;
+  background-color: #5F0F40;
+  padding: .5em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  transition: background-color .25s ease;
+}
+
+
+header ul li a:hover{
+  color: #5F0F40;
+  background-color: #E36414;
+
+}
+
+header ul li a:active{
+  color: #FB8B24;
+
+}
+
+section {
+  clear:both;
+}
+
+
+.legacy {
+  font-family: 'Legacy', cursive;
+  font-size: 150%;
+  margin: 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 75em;
+}
+
+.map {
+  clear: both;
+}
+
+.map svg{
+  width: 100%;
+  border: 5px solid #0F4C5C;
+  display: block;
+  vertical-align: top;
+
+}
+
+.rules h3 {
+  width: 80%;
+  min-width: 600px;
+  margin-bottom: 10px;
+  margin: 10px auto;
+
+}
+
+.rules table{
+  background-color: #FB8B24;
+  width: 80%;
+  min-width: 600px;
+  text-align: left;
+  margin: 10px auto 10px auto;
+  padding: 3px;
+  color: #F1F1D4;
+  font-size: 120%;
+
+}
+.rules table tr {
+  background-color: #5F0F40;
+}
+
+.rules table .troops{
+  background-color: #9A031E;
+}
+.rules table th {
+  padding: 5px;
+}
+
+.rules table td {
+  text-align: right;
+  padding: 5px;
+}
+
+
+/************************************
+Map
+************************************/
+
+svg text{
+  font-family: 'Risk Header', serif;
+  fill: #0F4C5C;
+  font-size: 200%;
+  text-anchor: middle;
+}
+
+.country:hover {
+  fill: #0F4C5C;
+}
+
+.country:hover path, .country:hover polygon{
+  fill: #0F4C5C;
+}
+
+.connector, .line{
+  fill: none;
+  stroke:#000000;
+
+}
+
+#winners text {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  fill: #000000;
+  font-size: 70%;
+  text-anchor: start;
+}
+
+#winners .title {
+  font-size: 100%;
+  fill: #0F4C5C;
+}
+.st2 {
+  stroke-miterlimit:10;
+}
+
+.africa path {
+  fill:#685A4B;
+  stroke:#000000;
+}
+
+.asia path {
+  fill:#519B2A;
+ stroke:#000000;
+}
+
+
+.europe path {
+  fill:#1D72D8;
+  stroke:#000000;
+}
+
+.north-america path {
+  fill:#CCAC00;
+  stroke:#000000;
+}
+
+
+.south-america path, .south-america polygon {
+  fill:#ED7321;
+  stroke:#000000;
+}
+
+
+.australia path {
+  fill:#84475A;
+  stroke:#000000;
+}
+
+
+
+
+/************************************
+Factions
+************************************/
+
+.faction-container {
+  width: 65%;
+}
+
+.faction {
+  padding: 0 0 .5em 1em;
+  margin-top: 3em;
+  color: #000000;
+}
+
+.flavor {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.power {
+  width: 100%;
+  background-color: #CCCCCC;
+  border: 2px solid #424242;
+  padding: .5em;
+  min-height: 3em;
+}
+
+.level1 {
+  border-color: #33cc33;
+  background-color: #aaff80;
+}
+
+.die-mech{
+  border-left: 15px solid #BA4745;
+}
+
+.saharan {
+  border-left: 15px solid #FB8B24;
+
+}
+
+.khan {
+  border-left: 15px solid #514A47;
+}
+
+.imperial {
+  border-left: 15px solid #6D4168;
+}
+
+.enclave {
+  border-left: 15px solid #69793E;
+}
+
+/************************************
+Enter Data
+************************************/
+
+input, textarea, select, button, label {
+  margin: 0;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+.form-content{
+  width: 100%;
+}
+.form-entry {
+  width: 65%;
+  margin: 2em 0;
+  min-width: calc(35em * .4);
+  padding: 1em;
+  color: #000;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+.form-entry h2, .form-entry h3 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  margin-top: 1em;
+}
+
+.form-entry label h3 {
+  display: inline;
+}
+
+.form-entry ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+
+}
+
+.form-entry li {
+  padding: .2em;
+}
+
+.form-entry input[type="submit"]{
+  margin: 2em 0;
+  display: block;
+}
+
+.form-entry input[type="text"] {
+  font-size: 1em;
+}
+
+
+.current-play {
+  border: 2px solid #5F0F40;
+  background-color: rgba(95, 15, 64, .2);
+}
+
+.current-play h2 {
+  color: #5F0F40;
+}
+
+.start-of-play {
+  border: 2px solid #0F4C5C;
+  background-color: rgba(15, 76, 92, .2);
+}
+
+.start-of-play h2 {
+  color: #0F4C5C;
+}
+
+.ongoing-play {
+  border: 2px solid #E36414;
+  background-color: rgba(227, 100, 20, .2);
+}
+
+.ongoing-play h2 {
+  color: #E36414;
+}
+
+.ongoing-play .form-entry-sub {
+  border-top: 1px solid #E36414;
+  padding-top: 1em;
+}
