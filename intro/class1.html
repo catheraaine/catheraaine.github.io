@@ -46,10 +46,10 @@
 
 			<!-- Welcome-->
 			<section>
-				<h3> Welcome! </h3>
-				<p class="green" style="font-size: 200%"> Slide Deck </p>
-				<p><a href="http:///catheraaine.com/intro/class1.html#/" target="_blank" alt="Class 1 Slides">Class 1 Slides </a></p>
-				<p>catheraaine.com/intro/class1.html</p>
+				<h3>Welcome!</h3>
+				<p>Class 1 Slides</p>
+				<p><a href="http:///catheraaine.com/intro/class1.html" target="_blank" alt="Class 1 Slides">catheraaine.com/intro/class1.html</a></p>
+				<p>All Class Materials</p>
 				<p><a href="http:///catheraaine.com/intro/links.html" target="_blank">catheraaine.com/intro/links.html</a></p>
 			</section>
 
@@ -70,13 +70,25 @@
 			</section>
 
 			<section>
+				<h3>Quick & Dirty Exercise</h3>
+				<br />
+				<div class="left-align">
+					<ol>
+						<li>Log in to <a href="http://codepen.io/" target="_blank">CodePen.io</a></li>
+						<li>Click "Create", then "New Pen" in the top right</li>
+						<li>Hands up if you need help ✋</li>
+					</ol>
+				</div>
+			</section>
+
+			<section>
 				<h3>Welcome!</h3>
 				<div class="left-align">
 					<p class="blue">Tell us about yourself.</p>
 					<ul>
 						<li>Who are you?</li>
 						<li>What do you hope to get out of the class?</li>
-						<li>If you are stranded on a deserted island, what book, tv show, or movie would you want with you?</li>
+						<li>What book, tv show, or movie do you never get bored with?</li>
 					</ul>
 				</div>
 			</section>
@@ -220,9 +232,7 @@
 						<li class="fragment">All HTML <strong>tags</strong> have &lt; and &gt;</li>
 						<li class="fragment">There are a variety of tags: p, strong, div, em, span, section, etc. <br><small>"etc." is not one...</small></li>
 						<li class="fragment">A paragraph in HTML is simply:
-<pre><code class="html">
-	&lt;p&gt;There's a tag on the left and a tag on the right.&lt;/p&gt;
-</code></pre>
+<pre><code class="html">&lt;p&gt;There's a tag on the left and a tag on the right.&lt;/p&gt;</code></pre>
 						</ul>
 
 					</section>
@@ -236,9 +246,9 @@
 								<ul>
 									<li>An individual component of HTML</li>
 									<li>Paragraph, Table, List</li>
-									<li style="list-style: none;">
-<pre><code class="html">&lt;strong&gt;This is an HTML element, right here<span style="color: #f05b62;">&lt;/strong&gt;</code>
-</pre>
+									<li>
+<pre><code class="html">&lt;strong&gt; This is an HTML element,
+right here&lt;/strong&gt;</code></pre>
 									</li>
 								</ul>
 							</li>
@@ -253,14 +263,10 @@
 									<li>Markers that signal the beginning and
 										end of an element</li>
 										<li>Opening tag and Closing Tag
-<pre><code class="html">
-	&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;
-</code></pre>
+<pre><code class="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
 										</li>
 										<li>
-<pre><code class="html">
-	&lt;p&gt;This is a sample paragraph.&lt;/p&gt;
-</code></pre>
+<pre><code class="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
 										</li>
 									</ul>
 								</section>
@@ -281,9 +287,9 @@
 												<ul>
 													<li>An element that cannot contain anything else</li>
 													<li>
-<pre><code class="html"> &lt;br&gt;
-	&lt;img&gt;
-	&lt;hr&gt;
+<pre><code class="html">&lt;br /&gt;
+&lt;img /&gt;
+&lt;hr /&gt;
 </code></pre>
 													</li>
 													<li>Just drop it in your code.</li>
@@ -309,9 +315,9 @@
 																<li>Value is the value assigned to a given
 																	attribute.</li>
 																	<li>
-<pre><code class="html">
-	&lt;a href="http://catherinerust.com">Catherine's Website&lt;/a&gt;
-	&lt;img src="cats.jpg"/&gt;
+<pre><code class="html">&lt;a href="http://catherinemeade.com">Catherine's
+Website&lt;/a&gt;
+&lt;img src="cats.jpg" alt="cats" /&gt;
 </code></pre>
 																	</li>
 																</ul>
@@ -339,9 +345,7 @@
 																<p class="fragment">The ﬁrst thing on an HTML page is the "doctype", which tells the browser which version of the markup language the page is using.</p>
 																<p class="fragment">Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy."</p>
 																<div class="fragment">
-<pre><code class="html">
-	&lt;!DOCTYPE html&gt;
-</code></pre>
+<pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
 																</div>
 															</section>
 
@@ -349,15 +353,12 @@
 																<h3>HTML Tag</h3>
 																<p>After &lt;doctype&gt;, the page content must be
 																	contained between &lt;html&gt; tags.</p>
-<pre><code class="html">
-	&lt;!DOCTYPE html&gt;
+<pre><code class="html">&lt;!DOCTYPE html&gt;
 
-	&lt;html&gt;
-
-	All of our content is going to live between
-	these two tags.
-
-	&lt;/html&gt;
+&lt;html&gt;
+	All of our content is going to
+	live between these two tags.
+&lt;/html&gt;
 </code></pre>
 																</section>
 
@@ -372,19 +373,18 @@
 																<section>
 																	<h3>Head and Body Tags</h3>
 																	<p>This is the basis of a complete HTML web page, called a <em>skeleton</em>.</p>
-<pre><code class="html">
-	&lt;!DOCTYPE html&gt;
-	&lt;html&gt;
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
 
-	&lt;head&gt;
-	&lt;title&gt;Title of the page&lt;/title&gt;
-	&lt;/head&gt;
+&lt;head&gt;
+  &lt;title&gt;Title of the page&lt;/title&gt;
+&lt;/head&gt;
 
-	&lt;body&gt;
-	The page content here.
-	&lt;/body&gt;
+&lt;body&gt;
+  The page content here.
+&lt;/body&gt;
 
-	&lt;/html&gt;
+&lt;/html&gt;
 </code></pre>
 																</section>
 
@@ -400,9 +400,8 @@
 																	<h3>Nesting</h3>
 																	<p>So, you could put a link into a paragraph. Very common.</p>
 
-<pre class="fragment"><code class="html">
-	&lt;p&gt;I want you to visit &lt;a href="http://google.com/"&gt;this site&lt;/a&gt;,
-	soon!&lt;/p&gt;
+<pre class="fragment"><code class="html">&lt;p&gt;I want you to visit&lt;a href="http://google.com/"&gt;
+this site&lt;/a&gt;,soon!&lt;/p&gt;
 </code></pre>
 
 																	<p class="fragment">What would that look like?</p>
@@ -418,20 +417,15 @@
 																	<h3>Paragraphs</h3>
 																	<div>
 																		<div class="left" style="width:50%">
-<pre><code>
-	&lt;p&gt;Paragraph 1&lt;/p&gt;
-	&lt;p&gt;Paragraph 2&lt;/p&gt;
-	&lt;p&gt;Paragraph 3&lt;/p&gt;
-</code></pre>
-<pre><code>
-	&lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;  &lt;p&gt;Paragraph 3&lt;/p&gt;
-</code></pre>
-<pre><code>
-	&lt;p&gt;Paragraph 1&lt;/p&gt;
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
+&lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;p&gt;Paragraph 3&lt;/p&gt;</code></pre>
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;  &lt;p&gt;Paragraph 3&lt;/p&gt;</code></pre>
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
 
 
-	&lt;p&gt;Paragraph 2&lt;/p&gt;
-	&lt;p&gt;Paragraph 3&lt;/p&gt;
+&lt;p&gt;Paragraph 2&lt;/p&gt;
+  &lt;p&gt;Paragraph 3&lt;/p&gt;
 </code></pre>
 																		</div>
 																		<div>
@@ -450,13 +444,14 @@
 																	<h3>Headings</h3>
 																	<div>
 																		<div class="left" style="width:50%">
-<pre><code>
-	&lt;h1&gt;Heading 1&lt;/h1&gt;
-	&lt;h2&gt;Heading 2&lt;/h2&gt;
-	&lt;h3&gt;Heading 3&lt;/h3&gt;
-	&lt;h4&gt;Heading 4&lt;/h4&gt;
-	&lt;h5&gt;Heading 5&lt;/h5&gt;
-	&lt;h6&gt;Heading 6&lt;/h6&gt;
+<pre><code class="html">
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+
 </code></pre>
 																		</div>
 																		<div class="left" style="width:50%">
@@ -477,17 +472,15 @@
 																	<h3>Lists</h3>
 																	<div>
 																		<div class="left" style="width:50%">
-<pre><code>
-	&lt;ul&gt;
-	&lt;li&gt;List Item&lt;/li&gt;
-	&lt;li&gt;Another List Item&lt;/li&gt;
-	&lt;/ul&gt;
+<pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
-<pre><code>
-	&lt;ol>
-	&lt;li&gt;List Item&lt;/li&gt;
-	&lt;li&gt;Another List Item&lt;/li&gt;
-	&lt;/ol&gt;
+<pre><code class="html">&lt;ol>
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ol&gt;
 </code></pre>
 																		</div>
 																		<div class="left" style="width:50%">
@@ -513,13 +506,12 @@
 																			<h3>Line Breaks</h3>
 																			<div>
 																				<div class="left" style="width:55%">
-<pre><code>
-	&lt;p&gt;
-	Or yet in wise old Ravenclaw, &lt;br/&gt;
-	If you've a ready mind, &lt;br/&gt;
-	Where those of wit and learning, &lt;br/&gt;
-	Will always find their kind
-	&lt;/p&gt;
+<pre><code class="html">&lt;p&gt;
+  Or yet in wise old Ravenclaw, &lt;br/&gt;
+  If you've a ready mind, &lt;br/&gt;
+  Where those of wit and learning, &lt;br/&gt;
+  Will always find their kind
+&lt;/p&gt;
 </code></pre>
 																				</div>
 																				<div class="left left-align" style="width:45%; font-size: 70%;" >
@@ -559,10 +551,12 @@
 																			<h3>Formatted text</h3>
 																			<div>
 																				<div class="left" style="width:50%">
-<pre><code>
-	&lt;p&gt;
-	Here is a paragraph with &lt;em&gt;Emphasized&lt;/em&gt; text and &lt;strong&gt;Important&lt;/strong&gt; text.
-	&lt;/p&gt;
+<pre><code>&lt;p&gt;
+  Here is a paragraph with
+  &lt;em&gt;Emphasized&lt;/em&gt;
+  text and &lt;strong&gt;Important
+  &lt;/strong&gt; text.
+&lt;/p&gt;
 </code></pre>
 																				</div>
 																				<div class="left left-align" style="width:50%">
@@ -582,47 +576,43 @@
 																			<h3>Let's Develop It!</h3>
 																			<p class="blue" class="fragment">We are going to start building a personal site.</p>
 																			<ol>
-																				<li class="fragment">Create a new folder,<em class="yellow">"GDI"</em>, on your desktop.</li>
-																				<li class="fragment">Create a new file and name it <em class="yellow">class1.html</em><br>
-																					<span style="font-size: 80%"> Keep your file names lowercase and without spaces.<br>
-																						The ".html" tells the computer what type of file you have saved.</span></li>
-																						<li class="fragment">Start the page with Doctype, Head, and Body - a Skeleton!</li>
-																						<li class="fragment">Write a paragraph about yourself.</li>
-																						<li class="fragment">Add a list of your favorite things.</li>
-																						<li class="fragment">Feel free to experiment!</li>
-																					</ol>
-																				</section>
+																				<li class="fragment">Create a new pen,<em class="yellow">"GDI"</em>, on Codepen.</li>
+																				<li class="fragment">Start the page with Doctype, Head, and Body - a Skeleton!</li>
+																				<li class="fragment">However, Codepen works without any of that stuff. Your HTML window is sort of like its own set of body tags.</li>
+																				<li class="fragment">Write a paragraph about yourself.</li>
+																				<li class="fragment">Add a list of your favorite things.</li>
+																				<li class="fragment">Feel free to experiment!</li>
+																			</ol>
+																		</section>
 
-																				<section>
-																					<h3>Skeleton Syntax Review</h3>
-<pre><code class="html">
-	&lt;!DOCTYPE html&gt;
-	&lt;html&gt;
+																		<section>
+																		<h3>Skeleton Syntax Review</h3>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
 
-	&lt;head&gt;
-	&lt;title&gt;My Amazing Website!&lt;/title&gt;
-	&lt;/head&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Amazing Website!&lt;/title&gt;
+  &lt;/head&gt;
 
-	&lt;body&gt;
-	&lt;p&gt;This is a paragraph about me! Now how do I add a list?&lt;/p&gt;
-	&lt;/body&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is a paragraph about me! Now how do I add a list?&lt;/p&gt;
+  &lt;/body&gt;
 
-	&lt;/html&gt;
+&lt;/html&gt;
 </code></pre>
-																					<p>You can steal the above code <a href="/skeleton.html" target="_blank">right here</a>. Just right-click, 'view source', and then copy and paste.</p>
+																					<p>You can steal the above code <a href="http://codepen.io/catheraaine/pen/bqwKPp" target="_blank">right here</a>.</p>
 																				</section>
 
 																				<!-- Links-->
 																				<section>
 																					<h3>Links</h3>
-																					<p>Links have three components</p>
+																					<p>Links have two components</p>
 																					<ul>
 																						<li>Tag: <span class="yellow">&lt;a&gt; &lt;/a&gt;</span></li>
 																						<li><strong class="yellow">href</strong> attribute: "http://www.girldevelopit.com"</li>
-																						<li><strong class="yellow">alt</strong> attribute: "Girl Develop It"</li>
+																						<li>Links are <em>container</em> elements. They have opening and closign tags.</li>
 																					</ul>
-<pre><code>
-	&lt;a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage"&gt;Girl Develop It!&lt;/a&gt;
+<pre><code>&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It!&lt;/a&gt;
 </code></pre>
 																					<p><a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!</a></p>
 
@@ -632,15 +622,15 @@
 																				<!-- Images-->
 																				<section>
 																					<h3>Images</h3>
-																					<p>Images also have three components</p>
+																					<p>Images have three components</p>
 																					<ul>
 																						<li>Tag: <span class="yellow">&lt;img/&gt; </span></li>
 																						<li><strong class="yellow">src</strong> attribute: location of your image</li>
 																						<li><strong class="yellow">alt</strong> attribute: description for screen readers</li>
+																						<li>Links are <em>stand alone</em> elements. They have are self-closing.</li>
 																						<li>Let's all try it! Copy this code into your HTML.</li>
 																					</ul>
-<pre><code>
-	&lt;img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/&gt;
+<pre><code>&lt;img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/&gt;
 </code></pre>
 																					<img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/>
 																				</section>
@@ -655,8 +645,7 @@
 																						</ul>
 																					</div>
 
-<pre><code>
-	&lt;img src="/images/billmurray.png" alt="Bill Murray"/&gt;
+<pre><code>&lt;img src="/images/billmurray.png" alt="Bill Murray"/&gt;
 </code></pre>
 																					<img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/>
 																				</section>
@@ -664,14 +653,13 @@
 																				<!-- Exercise-->
 																				<section>
 																					<h3>Let's Develop It</h3>
-																					<p>Add images and links to your funky webpage!</p>
+																					<p>Add images and links to your webpage!</p>
 																					<p>Feel free to get weird...</p>
-<pre><code class="html">
-	&lt;a href="http://girldevelopit.com/" alt="Girl Develop It"&gt;
-	&lt;img src="http://www.placekitten.com/400/400" alt="A Kitty!"/&gt;
-	&lt;/a&gt;
+<pre><code class="html">&lt;a href="http://girldevelopit.com/"&gt;
+ &lt;img src="https://placebear.com/400/400" alt="A Kitty!"/&gt;
+&lt;/a&gt;
 </code></pre>
-																					<a href="http://www.placekitten.com/" alt="Place Kitten" target="_blank">placekitten.com/</a><br>
+																					<a href="https://placebear.com/" alt="Place Bear" target="_blank">placebear.com/</a><br>
 																					<a href="http://www.fillmurray.com/" alt="Fill Murray" target="_blank">fillmurray.com/</a><br>
 																					<a href="http://placecorgi.com/" alt="Place Corgi" target="_blank">placecorgi.com/</a><br>
 																					<a href="http://baconmockup.com/" alt="Bacon Mock Yp" target="_blank">baconmockup.com/</a><br>
@@ -682,7 +670,7 @@
 																				<!-- Character codes-->
 																				<section>
 																					<h3>Character codes</h3>
-																					There are character codes for many different characters in many different languages
+																					<p>There are character codes for many different characters in many different languages</p>
 																					<ul>
 																						<li>Delta: <span style="color:#CC66FF;">&amp;delta;</span> &delta;</li>
 																						<li>Copyright symbol: <span style="color:#CC66FF;">&amp;copy;</span> &copy;</li>
@@ -703,11 +691,15 @@
 																					</section>
 
 																					<section>
-																						<h3> Homework for Class 1</h3>
-
-																						<br>
-
-																						<a href="http://www.catheraaine.com/intro/homework1.html"> catheraaine.com/intro/homework1.html </a>
+																						<h3> Exercise for Class 1</h3>
+																						<ol>
+																							<li>Create a new Pen with nothing in it.</li>
+																							<li>Follow the instructions at the this link:
+																								<a href="http://www.catheraaine.com/intro/homework1.html" target="_blank"> catheraaine.com/intro/homework1.html </a></li>
+																							<li>Let's ignore everything but what goes inside the body tag.
+																								Remember, CodePen does this for us.</li>
+																							<li>Hands up if you need help ✋</li>
+																						</ol>
 																					</section>
 
 
