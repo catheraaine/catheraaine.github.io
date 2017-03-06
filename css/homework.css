@@ -37,7 +37,11 @@ h2 {
 
 header {
 	clear: both;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
+}
+
+header img {
+	margin-top: -2em;
 }
 
 .lists{
