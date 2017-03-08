@@ -44,25 +44,28 @@
 
 			<!-- Welcome-->
 			<section>
-				<h3> Welcome! </h3>
-				<p class="green" style="font-size: 200%"> Slide Deck </p>
-				<p><a href="http:///catheraaine.com/intro/class2.html#/" target="_blank" alt="Class 2 Slides">Class 2 Slides </a></p>
-				<p>catherinerust.com/intro/class2.html</p>
+				<h3>Welcome!</h3>
+				<p>Class 2 Slides</p>
+				<p><a href="http:///catheraaine.com/intro/class2.html" target="_blank">catheraaine.com/intro/class2.html</a></p>
+				<p>All Class Materials</p>
+				<p><a href="http:///catheraaine.com/intro/links.html" target="_blank">catheraaine.com/intro/links.html</a></p>
+			</section>
+
+			<section>
+				<h3>Welcome!</h3>
+				<p>Thanks to our sponsor, <span class="blue">Sparkbox</span>!</p>
+				<p>WiFi: "Build Right"</p>
+				<p>See the marker board for the password.</p>
 			</section>
 
 			<section>
 				<h3>Homework Review</h3>
-				<div class="left-align">
-					<ul>
-
-					</ul>
-				</div>
 			</section>
 
 			<!-- Role of HTML v. CSS-->
 
 			<section>
-				<h3>Quiz, pt. 1!</h3>
+				<h3>Quiz, part 1!</h3>
 				<p>Which tag is used to create a link to another page?</p>
 				<ol>
 					<li>&lt;p&gt;</li>
@@ -74,13 +77,13 @@
 			</section>
 
 			<section>
-				<h3>Quiz, pt. 2!</h3>
+				<h3>Quiz, part 2!</h3>
 				<p>What are the two tags that nest directly within the &lt;html&gt; tags?</p>
 				<div class="fragment yellow">Answer: &lt;head&gt; and &lt;body&gt;</div>
 			</section>
 
 			<section>
-				<h3>Quiz, pt. 3!</h3>
+				<h3>Quiz, part 3!</h3>
 				<p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
 				<div class="fragment yellow">Answer: An HTML <strong>Element</strong></div>
 			</section>
@@ -89,15 +92,14 @@
 			<section>
 				<h3>Tags and elements</h3>
 				<p><span class="green">Tags</span> are the end pieces:</p>
-<pre><code class="html">
-	&lt;p&gt;&lt;/p&gt;
-	&lt;img /&gt;
-	&lt;h1&gt;&lt;/h1&gt;
+<pre><code class="html">&lt;p&gt;&lt;/p&gt;
+&lt;img /&gt;
+&lt;h1&gt;&lt;/h1&gt;
 </code></pre>
 				<p>And <span class="green">Elements</span> are the whole thing:</p>
-<pre><code class="html">
-	&lt;h1&gt;Fun Hamlet Quotes&lt;/h1&gt;
-	&lt;p&gt;"And it must follow, as the night the day."&lt;/p&gt;
+<pre><code class="html">&lt;h1&gt;Guardians of the Galaxy Quotes&lt;/h1&gt;
+&lt;p&gt;"Nothing goes over my head! My reflexes
+are too fast, I would catch it."&lt;/p&gt;
 </code></pre>
 			</section>
 
@@ -134,9 +136,10 @@
 					<p>In this CSS, 'selector' is a rule to select HTML.</p>
 				</div>
 <pre><code class="css">
-	selector {
+  selector {
 
-	}
+  }
+
 </code></pre>
 				<p class="left-align">"I want to <em>select</em> all the paragraphs."</p>
 				<p class="left-align">"I want to <em>select</em> the list of recipe ingredients."</p>
@@ -146,9 +149,10 @@
 				<h3>CSS: The second part - Declaration</h3>
 				<p>It's how we give a certain style to what we 'selected'.</p>
 <pre><code class="css">
-	p {
-		color: red;
-	}
+  p {
+   color: red;
+  }
+
 </code></pre>
 				<p class="left-align">"I <em>declare</em> that this text shall be red!</p>
 				<p class="left-align">"I <em>declare</em> this paragraph shall be aligned to the right!</p>
@@ -156,26 +160,33 @@
 
 			<section>
 				<h3>Who wants to see a live example?</h3>
-				<p>If you say 'yes,' we can do one right now!</p>
-				<p>&nbsp;</p>
-				<p class="fragment">Note: Create two files for today, <span class="yellow">class2.html</span>, and <span class="yellow">class2.css</span>.</p>
+				<p class="fragment">Head over to Codepen.io and create a new pen.</p>
 				<div class="fragment">
-<pre><code class="html">
-	&lt;head&gt;
-	...
-	&lt;link href="class2.css" rel="stylesheet"&gt;
-	&lt;/head&gt;
-</code></pre>
 				</div>
+			</section>
+
+			<section>
+				<h3>CodePen Note:</h3>
+				<p> CodePen will automatically link our CSS into our HTML.
+					If we want to build our websites locally (not on CodePen), we need to link to
+					an external stylesheet by adding a "link" tag inside our "head" tags. Example:</p>
+<pre><code class="html">
+  &lt;head&gt;
+  ...
+  &lt;link href="class2.css" rel="stylesheet"&gt;
+  &lt;/head&gt;
+
+</code></pre>
 			</section>
 
 			<!-- The CSS Rule-->
 			<section>
 				<h3>The CSS Rule</h3>
 <pre><code class="html">
-	selector {
-		property: value;
-	}
+  selector {
+    property: value;
+  }
+
 </code></pre>
 				<div class="left-align">
 					<p class="fragment">A block of CSS code is a <span class="blue">rule</span>.</p>
@@ -189,35 +200,38 @@
 			<section>
 				<h3>CSS Syntax</h3>
 				<div class="left-align">
-					<p class="fragment">Declarations:  Property and value of style you plan use on HTML element. </p>
+					<p class="fragment">Declaration:  Property and value of style you plan use on HTML element. </p>
 					<p class="fragment">Declarations end with a semicolon (;).</p>
-					<p class="fragment">Declaration groups are surrounded by curly brackets.</p>
+					<p class="fragment">Declaration groups are surrounded by curly braces.</p>
 				</div>
 				<div class="fragment">
 <pre><code class="html">
-	selector {
-		property: value;
-		property: value;
-		property: value;
-	}
+  selector {
+    property: value;
+    property: value;
+    property: value;
+  }
+
 </code></pre>
 				</div>
-				<p class="fragment">This is a 'rule' with three declarations.</p>
+				<p class="fragment">This is a rule with three declarations.</p>
 			</section>
 
 			<!-- Selectors elements-->
 			<section>
 				<h3>Selector: Element</h3>
 <pre><code class="html">
-	p {
-		property: value;
-	}
+  p {
+    property: value;
+  }
+
 </code></pre>
 				<p>Selects all paragraph elements.</p>
 <pre><code class="html">
-	img {
-		property: value;
-	}
+  img {
+    property: value;
+  }
+
 </code></pre>
 				<p>Selects all image elements.</p>
 			</section>
@@ -228,13 +242,14 @@
 				<p class="left-align">How can we identify a single item on the page?</p>
 				<p class="fragment left-align">By giving it an 'id'.</p>
 <pre class="fragment"><code class="html">
-	&lt;p id="footer"&gt;This is the footer of our website, and we should
-	probably style it in some way so it hangs out at the bottom.&lt;/p&gt;
+  &lt;p id="footer"&gt;This is the footer of our website,
+  and we should probably style it in some way so it hangs
+  out at the bottom.&lt;/p&gt;
+
 </code></pre>
 				<p class="fragment left-align">The 'id' of that paragraph is 'footer'.</p>
 				<p class="fragment left-align">There can be only one.</p>
 				<p class="fragment left-align">We've basically 'named' this element so we can style it in our CSS document specifically.</p>
-
 			</section>
 
 			<!-- Selectors ID-->
@@ -242,14 +257,16 @@
 				<h3>Selector: ID</h3>
 				<p>ID's are selected with the # (hash) symbol.</p>
 <pre><code class="html">
-	#footer {
-		property: value;
-	}
+  #footer {
+    property: value;
+  }
+
 </code></pre>
 				<p>Selects all elements with an id of "footer".</p>
 
 <pre><code class="html">
-	&lt;p id="footer"&gt;Copyright 2011&lt;/p&gt;
+  &lt;p id="footer"&gt;Copyright 2011&lt;/p&gt;
+
 </code></pre>
 				<p>The associated HTML.</p>
 			</section>
@@ -260,9 +277,10 @@
 				<p class="left-align">How can we identify a set of items on the page?</p>
 				<p class="fragment left-align">By giving each of them a 'class'.</p>
 <pre class="fragment"><code class="html">
-	&lt;p class="warning"&gt;My text must be red, or else.&lt;/p&gt;
-	&lt;p&gt;I have no class.&lt;/p&gt;
-	&lt;p class="warning"&gt;I beg you, redden me.&lt;/p&gt;
+  &lt;p class="warning"&gt;My text must be red, or else.&lt;/p&gt;
+  &lt;p&gt;I have no class.&lt;/p&gt;
+  &lt;p class="warning"&gt;I beg you, redden me.&lt;/p&gt;
+
 </code></pre>
 				<p class="fragment left-align">The 'class' of two of them is 'warning'.</p>
 				<p class="fragment left-align">We can single out just 'warning' with some CSS...</p>
@@ -274,14 +292,16 @@
 			<section>
 				<h3>Selector: Class</h3>
 <pre><code class="html">
-	.warning {
-		color: red;
-	}
+  .warning {
+    color: red;
+  }
+
 </code></pre>
 				<p>Selects all elements with a class of 'warning'.</p>
 
 <pre><code class="html">
-	&lt;p class="warning"&gt;Run away!&lt;/p&gt;
+  &lt;p class="warning"&gt;Run away!&lt;/p&gt;
+
 </code></pre>
 				<p>The associated HTML.</p>
 			</section>
@@ -315,17 +335,19 @@
 
 			<!-- Selector position-->
 			<section>
-				<h3>Selector: Position</h3>
+				<h3>Multiple Selectors</h3>
 <pre><code class="html">
-	p em {
-		color: yellow;
-	}
+  p em {
+    color: yellow;
+  }
+
 </code></pre>
 
 				<p>Selects all &lt;em&gt; elements that are within a &lt;p&gt;.</p>
 				<p>Such as this HTML:</p>
 <pre><code class="html">
-	&lt;p&gt;This is &lt;em&gt;important.&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;This is &lt;em&gt;important&lt;/em&gt;.&lt;/p&gt;
+
 </code></pre>
 
 			</section>
@@ -335,11 +357,12 @@
 				<h3>Property Values</h3>
 				<p>Each property can have one or more comma separated values.</p>
 <pre><code class="html">
-	p {
-		color: white;
-		background-color: red;
-		font-family: Arial, sans-serif;
-	}
+  p {
+    color: white;
+    background-color: red;
+    font-family: Arial, sans-serif;
+  }
+
 </code></pre>
 			</section>
 
@@ -348,11 +371,12 @@
 				<h3>Property: Color</h3>
 				<p>The color property changes the color of the text.</p>
 <pre><code class="html">
-	p {
-		color: red;
-		color: #ff0000;
-		color: rgb(255, 0, 0);
-	}
+  p {
+    color: red;
+    color: #ff0000;
+    color: rgb(255, 0, 0);
+  }
+
 </code></pre>
 				<p>Color name</p>
 				<p>Hexadecimal value</p>
@@ -364,11 +388,12 @@
 				<h3>Property: Background-color</h3>
 				<p>The background-color property changes the color of the background.</p>
 <pre><code class="html">
-	p {
-		background-color: black;
-		background-color: #000000;
-		background-color: rgb(0,0,0);
-	}
+  p {
+    background-color: black;
+    background-color: #000000;
+    background-color: rgb(0,0,0);
+  }
+
 </code></pre>
 			</section>
 
@@ -377,11 +402,12 @@
 				<h3>Property: Font-family</h3>
 				<p>The font-family property deﬁnes which font is used.</p>
 <pre><code class="html">
-	p {
-		font-family: "Times New Roman";
-		font-family: serif;
-		font-family: "Arial", sans-serif;
-	}
+  p {
+    font-family: "Times New Roman";
+    font-family: serif;
+    font-family: "Arial", sans-serif;
+  }
+
 </code></pre>
 				<p>Specific font name</p>
 				<p>Generic name</p>
@@ -393,11 +419,12 @@
 				<h3>Property: Font-size</h3>
 				<p>The font-size property speciﬁes the size of the font.</p>
 <pre><code class="html">
-	p {
-		font-size: 12px;
-		font-size: 1.5em;
-		font-size: 100%;
-	}
+  p {
+    font-size: 12px;
+    font-size: 1.5em;
+    font-size: 100%;
+  }
+
 </code></pre>
 				<p>Pixels</p>
 				<p>"em"</p>
@@ -407,19 +434,21 @@
 			<!-- Fonts-->
 			<section>
 				<h3>Property: Fonts (shorthand)</h3>
-<pre><code class="html">
-	p {
-		font-style: italic;
-		font-weight: bold;
-		font-size: 10px;
-		font-family: sans-serif;
-	}
+<pre><code class="css">
+  p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
 </code></pre>
 				OR
-<pre><code class="html">
-	p {
-		font: italic bold 10px sans-serif;
-	}
+<pre><code class="css">
+  p {
+    font: italic bold 10px sans-serif;
+  }
+
 </code></pre>
 			</section>
 
@@ -436,7 +465,8 @@
 			<section>
 				<h3>Connecting CSS to HTML: Inline</h3>
 <pre><code class="html">
-	&lt;p style="color:red;"&gt;Some text.&lt;/p&gt;
+  &lt;p style="color:red;"&gt;Some text.&lt;/p&gt;
+
 </code></pre>
 				<p>Uses the HTML attribute "style".</p>
 				<p>Difficult to use in large projects.</p>
@@ -447,16 +477,17 @@
 			<section>
 				<h3>Connecting CSS to HTML: Embedded</h3>
 <pre><code class="html">
-	&lt;head&gt;
-	...
-	&lt;style type="text/css"&gt;
-	p {
-		color: blue;
-		font-size: 12px;
-	}
-	&lt;/style&gt;
-	...
-	&lt;/head&gt;
+  &lt;head&gt;
+  ...
+    &lt;style type="text/css"&gt;
+      p {
+        color: blue;
+        font-size: 12px;
+      }
+    &lt;/style&gt;
+  ...
+  &lt;/head&gt;
+
 </code></pre>
 				<p>Inside &lt;head&gt; element.</p>
 				<p>Uses &lt;style&gt; tag.</p>
@@ -467,9 +498,10 @@
 			<section>
 				<h3>Connecting CSS to HTML: Linked</h3>
 <pre><code class="html">
-	&lt;head&gt;
-	&lt;link href="class2.css" rel="stylesheet"&gt;
-	&lt;/head&gt;
+  &lt;head&gt;
+    &lt;link href="class2.css" rel="stylesheet"&gt;
+  &lt;/head&gt;
+
 </code></pre>
 				<p>Shared resource for several pages.</p>
 				<p>Reduces ﬁle size &amp; bandwidth.</p>
@@ -477,40 +509,35 @@
 				<p>Preferred by nerds everywhere!</p>
 			</section>
 
-			<!-- Exercise-->
-			<section>
-				<h3>Let's develop it</h3>
-				<ul>
-					<li class="fragment">You should have a <span class="yellow">class2.css</span> file.</li>
-					<li class="fragment">Make sure it is linked in the "head" of <span class="yellow">class1.html</span>.</li>
-					<li class="fragment">Add styles to change the colors, background colors or fonts of different parts of your page.</li>
-					<li class="fragment">Try using ids and classes to change specific elements.</li>
-				</ul>
-			</section>
-
 			<!-- Cascading-->
 			<section>
 				<h3>Cascading</h3>
 				<p>Styles "cascade" down until changed.</p>
-				<p class="left-align small">class2.css</p>
+				<p class="left-align small">CSS</p>
 <pre><code class="html">
-	p {
-		color:blue;
-		font-family: 'Helvetica';
-	}
-	.red {
-		color:red;
-	}
-	#special {
-		font-family: Arial;
-	}
+  p {
+    color:blue;
+    font-family: 'Helvetica';
+  }
+  .red {
+    color:red;
+  }
+  #special {
+    font-family: Arial, sans-serif;
+  }
+
 </code></pre>
-				<p class="left-align small">class2.html</p>
+			</section>
+			<section>
+				<h3>Cascading</h3>
+				<p>Styles "cascade" down until changed.</p>
+				<p class="left-align small">HTML</p>
 <pre><code class="html">
-	&lt;p&gt;Paragraph&lt;/p&gt;
-	&lt;p class="green"&gt;Paragraph&lt;/p&gt;
-	&lt;p class="red"&gt;Paragraph&lt;/p&gt;
-	&lt;p class="red" id="special"&gt;Paragraph&lt;/p&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+  &lt;p class="green"&gt;Paragraph&lt;/p&gt;
+  &lt;p class="red"&gt;Paragraph&lt;/p&gt;
+  &lt;p class="red" id="special"&gt;Paragraph&lt;/p&gt;
+
 </code></pre>
 			</section>
 
@@ -535,14 +562,25 @@
 				<div style="font-size:1200%; height:100%; margin-top:30%" class="blue">?
 					<div class="clear"></div></div>
 				</section>
-			</div>
 
-			<footer>
-				<div class="copyright">
-					HTML/CSS ~ Girl Develop It ~
-					<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-				</div>
-			</footer>
+
+			<!-- Exercise-->
+			<section>
+				<h3>Let's develop it!</h3>
+				<ul>
+					<li class="fragment">Open up your HTML Pen from earlier.</li>
+					<li class="fragment">Add styles to change the colors, background colors or fonts of different parts of your page.</li>
+					<li class="fragment">Try using ids and classes to change specific elements.</li>
+				</ul>
+			</section>
+		</div>
+
+		<footer>
+			<div class="copyright">
+				HTML/CSS ~ Girl Develop It ~
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+			</div>
+		</footer>
 		</div>
 
 
