@@ -54,7 +54,7 @@ h1, h2 {
   -moz-border-radius: 50%;
   border: 5px solid #0093A0;
   display: block;
-  margin: .5em auto; }
+  margin: 2rem auto; }
 
 p a:link, p a:visited {
   color: #0093A0;
@@ -206,5 +206,8 @@ p a:hover, p a:active {
     fill: #0093A0; }
   .social-icon:hover #codepen-icon, .social-icon:hover #facebook-icon {
     fill: #EAB98C; }
+
+#about p {
+  margin-top: 3rem; }
 
 /*# sourceMappingURL=global.css.map */
