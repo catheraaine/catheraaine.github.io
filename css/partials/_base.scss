@@ -1,12 +1,12 @@
 // GLOBAL STYLES
 body {
-  font-family: $primary-font;
-  color: $darkest;
+  font-family: $font-primary;
+  color: gray(0);
 }
 
 h1, h2 {
-  font-family: $secondary-font;
-  color: $lightest;
+  font-family: $font-secondary;
+  color: gray(100);
 }
 
 .content{
@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 #about, #work, #contact {
-  background-color: $lightest;
+  background-color: gray(100);
 }
 
 
@@ -43,21 +43,21 @@ h1, h2 {
   border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-  border: 5px solid $primary;
+  border: 5px solid $c-primary;
   display: block;
   margin: 2rem auto;
 }
 
 p a {
   &:link, &:visited {
-    color: $primary;
+    color: $c-primary;
 
-    border-bottom: 1px solid $primary;
+    border-bottom: 1px solid $c-primary;
   }
 
   &:hover, &:active {
-    color: $accent;
-    border-bottom: 1px solid $accent;
+    color: $c-accent;
+    border-bottom: 1px solid $c-accent;
     font-style: italic;
   }
 }

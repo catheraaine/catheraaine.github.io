@@ -5,28 +5,30 @@
 .nav {
   @include nav-button;
   width: 100%;
-  background-color: rgba(255, 255, 255, .85);
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  background-color: rgba( $primary, .2);
-
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 
   li {
     margin: 1em auto;
-    padding: .25em;
+    padding: 0.25em;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: black;
-
   }
 
   @media screen and (min-width: $break-small) {
+    background-color: rgba( $c-primary, 0.2);
     width: $nav-width;
     position: fixed;
     right: 0;
     top: 0;
     height: 100%;
     padding: 0;
+
     ul {
       width: 100%;
       text-align: center;
@@ -35,8 +37,9 @@
     }
 
     li {
-      margin: .5em;
+      margin: 0.5em;
       display: block;
+      font-size: 1.5rem;
     }
   }
 }
