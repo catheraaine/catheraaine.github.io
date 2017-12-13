@@ -1,21 +1,19 @@
+@function gray($level) {
+ @return lighten(black, $level * 1%);
+}
 // VARIABLES
 
 // Colors
-$primary: #0093A0;
-$accent: #D75F74;
-$highlight: #EAB98C;
+$c-primary: #0093A0;
+$c-accent: #D75F74;
+$c-highlight: #EAB98C;
 
-$darkest: #000;
-$dark: #666;
-$light: #DDD;
-$lightest: #fff;
-
-$black-transparent: rgba(0, 0, 0, .5);
+$black-transparent: rgba(black, 0.5);
 
 
 // Fonts
-$primary-font: "ASAP", "Helvetica", "Ariel", sans-serif;
-$secondary-font: "Racing Sans One", "Georgia", "Times New Roman", serif;
+$font-primary: "ASAP", "Helvetica", "Ariel", sans-serif;
+$font-secondary: "Racing Sans One", "Georgia", "Times New Roman", serif;
 
 // Breakpoints
 $break-small: 52.75em;
