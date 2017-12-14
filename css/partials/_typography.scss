@@ -20,16 +20,13 @@
   small {
     right: 4em;
     position: absolute;
-    @media screen and (min-width: $break-large) {
+    @media screen and (min-width: $break-small) {
       font-size: 1em;
     }
   }
 
   blockquote {
     @media screen and (min-width: $break-small) {
-      font-size: 1.5em;
-    }
-    @media screen and (min-width: $break-large) {
       font-size: 2em;
     }
   }

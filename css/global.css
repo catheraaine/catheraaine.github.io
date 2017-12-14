@@ -77,20 +77,17 @@ p a:hover, p a:active {
   position: absolute;
   left: 10%;
   top: 25%; }
-  @media screen and (min-width: 52.75em) {
+  @media screen and (min-width: 62em) {
     .quote {
       width: 40%;
       left: calc(30% - (18em/2)); } }
   .quote small {
     right: 4em;
     position: absolute; }
-    @media screen and (min-width: 75.44em) {
+    @media screen and (min-width: 62em) {
       .quote small {
         font-size: 1em; } }
-  @media screen and (min-width: 52.75em) {
-    .quote blockquote {
-      font-size: 1.5em; } }
-  @media screen and (min-width: 75.44em) {
+  @media screen and (min-width: 62em) {
     .quote blockquote {
       font-size: 2em; } }
 
@@ -124,7 +121,7 @@ p a:hover, p a:active {
     display: inline-block;
     font-size: 1rem;
     color: black; }
-  @media screen and (min-width: 52.75em) {
+  @media screen and (min-width: 62em) {
     .nav {
       background-color: rgba(0, 147, 160, 0.2);
       width: 18em;
@@ -146,7 +143,7 @@ p a:hover, p a:active {
 .container {
   box-sizing: border-box;
   width: 100%; }
-  @media screen and (min-width: 52.75em) {
+  @media screen and (min-width: 62em) {
     .container {
       width: calc(100% - 18em); } }
 
@@ -159,16 +156,15 @@ p a:hover, p a:active {
     margin: 2em 0 0.5rem 0; }
   .sub-container p {
     margin-bottom: 0.5rem; }
-  @media screen and (min-width: 52.75em) {
+  @media screen and (min-width: 62em) {
     .sub-container {
       margin: 2rem;
       padding-top: 0; } }
 
 .about-container {
+  width: 85%;
+  margin: 0 auto;
   max-width: 30rem; }
-  @media screen and (min-width: 52.75em) {
-    .about-container {
-      margin: 0 auto; } }
 
 .contact-container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -178,12 +174,12 @@ p a:hover, p a:active {
   margin: -5rem auto 0;
   min-height: 120vh;
   font-size: 0.85rem; }
-  @media screen and (min-width: 52.75em) {
+  @media screen and (min-width: 62em) {
     .contact-container {
       font-size: 100%; } }
   .contact-container ul {
     margin: 0; }
-    @media screen and (min-width: 52.75em) {
+    @media screen and (min-width: 62em) {
       .contact-container ul {
         margin: 2em; } }
     .contact-container ul li {
