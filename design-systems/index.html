@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Keeping Subscribers Engaged in Your Design System</title>
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/ico">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/sparkbox-dark.css">
+    <!-- Sparkbox Typography -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/655912/6152352/css/fonts.css" /> -->
+    <!-- Modern CSS Typography -->
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/655912/7863972/css/fonts.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!-- <link rel="stylesheet" href="lib/css/atom-one-dark.css"> -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+  <section id="start"class="slide title-card">
+    
+      <div class="slide-one">
+<h1 class="slide-one__heading">Keeping Subscribers Engaged in Your Design System</h1>
+<img class="slide-one__image slide-image" src="images/me.jpg" alt="a picture of cat at her desk" />
+<h5><a href="https://github.com/catheraaine/keeping-subscribers-engaged-in-your-design-system" target="_blank">bit.ly/meade-design-systems</a></h5>
+</div>
+<aside class="notes">
+</aside>
+  </section>
+  <section class="slide ">
+    
+      <img src="images/self-portrait-with-straw-hat.jpg" style="display:block;max-height:75vh" />
+<p style="font-size:65%;margin-top:2rem;"><em>Self Portrait with Straw Hat</em>, 1887 by Vincent Van Gogh via <a href="https://www.vincentvangogh.org/self-portrait-with-straw-hat.jsp">VincentVanGogh.org</a></p>
+<aside class="notes">Tell a story here, Catherine.
+Van Gogh is an artist and nobody wants to buy his paintings. This is like design systems that we know are beautiful but no one wants to use. How do we do what Van Gogh couldn&#x27;t, and get people to buy our paintings, er, design system?
+</aside>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide intros">
+    <script type="text/template">
+      <div class="intro">
+  <img src="images/cat.svg" width="200" alt="An illustration of a smiling cat"/>
+  <h2 class="name">Catherine Meade</h2>
+  <h3 class="job-title util-margin-t0">Developer, Sparkbox</h3>
+  <h4 class="twitter"><a href="https://twitter.com/catheraaine">@catheraaine</a></h4>
+  <h4 class="twitter color-sparkblue1" style="font-size:1.5rem;">she / her</h4>
+</div>
+Notes:
+* I&#x27;m Catherine, I&#x27;m a full-stack developer (whatever that means).
+* I use she/her pronouns.
+* I work at Sparkbox, a web design and development consultant in Dayton, Ohio.
+* That&#x27;s me on Twitter
+* I spent most of my last couple years building a single enterprise-level design system that supports a number of ecommerce sites built in a multitude of JavaScript frameworks, the largest of which is React.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="define"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # What is a Design System?
+Notes:* Before we get to problems and solutions, let&#x27;s make sure we&#x27;re all on the same page with terminology.
+* This is a bit I stole from &quot;Folding Ideas&quot; which is a great channel on Youtube if you enjoy long format video essays. So check that out maybe.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### Define: <!-- .element: class="short-title" -->
+## Design System
+Notes:* So what is a design system?
+* The origins of a design system started in print, with what any classically trained graphic designer or writer may know as a &quot;style guide.&quot;
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      <blockquote>“A brand style guide is a document that codifies how an organization presents itself to the world. Put another way, it’s a reference tool that helps maintain consistency by demonstrating what a brand looks, feels and sounds like.”</blockquote>
+
+[99designs.com/blog](https://99designs.com/blog)
+Notes:* According to the 99 designs blog, &quot;A brand style guide is a document that codifies how an organization presents itself to the world. Put another way, it’s a reference tool that helps maintain consistency by demonstrating what a brand looks, feels and sounds like.&quot;
+* I think you can translate that definition word-for-word to the web, but I&#x27;ve got some others for you, too.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![the landing page of designsystemsurvey.seesparkbox.com](/images/ds-survey-landing.png) <!-- .element: style="max-height:80vh" -->
+
+[designsystemssurvey.seesparkbox.com](https://designsystemssurvey.seesparkbox.com/)
+Notes:* In 2018, Sparkbox put together a design systems survey in order to chip away at the ambiguity around one of our core technologies. 
+* The survey states that, &quot;design systems are living codebases of frontend components that solve real-life problems for enterprise organizations, agencies and companies of all sizes.&quot;
+* I&#x27;ll be referencing this more, but if you want to read the complete survey, it&#x27;s at design systems survey dot see sparkbox dot com
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### Define: <!-- .element: class="short-title" -->
+## Design System
+Notes:* Well-thought design systems can provide live, interactive examples of often used components,
+* Assist the rapid build of new pages and applications, 
+* And ensure brand consistency and uniformity across multiple digital formats.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Design System
+### Pattern Library <!-- .element: class="fragment" -->
+### Style Guide <!-- .element: class="fragment" -->
+Notes:* A design system can be a architeture device that provides both brand expression and completed components,
+* It can be a &#x27;pattern library&#x27; as a place to copy-and-paste common code snippets, 
+* It can be a style guide, providing color palette, fonts, iconography, and animations, as well as tone and voice guidelines and so much more.
+* Whatever a design system means to you and your team, eventually we all ask the question, “How do we encourage people to keep using our design system?”
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### Define: <!-- .element: class="short-title" -->
+## Subscriber
+Notes:* Beyond &quot;design system&quot;, I say the word &quot;subscriber&quot; quite a bit. 
+* In this case, a &quot;subscriber&quot; is someone who will implement the design system on a larger body of work.
+* A subscriber can be a developer, designer, copy-writer, or product manager or owner.
+* These sub-groups have different needs, and it may be worthwhile to identify which groups have a vested interest in each specific area of your system.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="problem"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # So what's the problem?
+Notes:* So what is our problem?
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### Not Asking: <!-- .element: class="short-title" -->
+## How do I get people on board with building a design system? <!-- .element: style="font-size: 1.5em" -->
+Notes:* I am not here to sell you on a design system. There are plenty of resources to help you decide if it is the right choice for your team. I would be more than happy to have a chat with you afterward, if you&#x27;re considering it. 
+* Instead, let&#x27;s focus on the challenges of getting people to use the cool thing you&#x27;ve built. 
+* Even if you aren&#x27;t working on a design system, I hope you find worth in some of the things I&#x27;m going to talk about.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      # How do we encourage people to keep using our design system?
+Notes:* The design system I&#x27;ve been working on for nearly three years is not new. It was first thought of in 2015, and released to beta in early 2016. 
+* We&#x27;ve gone through five major versions, that&#x27;s five releases of exciting new components and messy breaking changes. We&#x27;ve had huge successes, such as changing every instance of a major brand color and or the entire font profile of multiple brands almost at the flip of a switch.
+* We&#x27;ve had huge failures, components that go unused or outdated, JavaScript that does nothing but sit in a repository, and a number of late night patch releases. 
+* And still I end up asking myself this question on a regular basis.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![why do design systems fail?](/images/ds-survey-chart.png) <!-- .element: style="max-height:80vh" -->
+
+[designsystemssurvey.seesparkbox.com](https://designsystemssurvey.seesparkbox.com/)
+Notes:* The Sparkbox design systems survey asked the question, why do you think your design system failed? 
+* There were a lot of answers, from lack of executive champion to funding issues. In my mind, all of these answers boil down to one thing. 
+* These failing systems were not considered products.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### The Answer: <!-- .element: class="short-title" -->
+## Your Design System <br /> = Your Product.
+Notes:* In order to convince subscribers to use your design system, you must treat it like a product. 
+* That&#x27;s it. From here on out, the rest should make sense. If we give our design systems the same attention we give any other product we build, it has a much higher chance of long-term success.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ###### The Answer: <!-- .element: class="short-title" -->
+## Your Design System <br /> = Your <span class="fragment">Desirable, </span><span class="fragment">Funded, </span><span class="fragment">Teachable, </span><span class="fragment">Attentive, </span><span class="fragment">Documented, </span><span class="fragment">Adaptable, </span><span class="fragment">Branded </span>Product.
+Notes:* Your design system is your Desirable, Funded, Teachable, Attentive, Documented, Adaptable, Branded Product.
+* So let&#x27;s build a product that&#x27;s all that, then _maybe_ people will want to use it. No promises.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="desirable"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Desirable
+Notes:* Let&#x27;s pick apart that giant list of adjectives, starting with &quot;desirable.&quot;
+* The first step to having a good design system is, well, having a good design system.
+* A _desirable_ designs system is one people want to use. People will want to use it if it solves one or more problems they already have.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Find a frustration point your subscribers have, and ease it.
+Notes:* Okay easy. Solve everyone&#x27;s problems, and they&#x27;ll use the thing we built. How do we do that?
+* How do we identify the frustration points of our subscribers? 
+* Some ideas.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Have an Ambassador
+Notes:* If your design system team is separate from your product development team, attend the product team’s standups or feature-planning meetings. 
+* This gives your team an insiders&#x27; perspective–someone &quot;on the ground&quot; to identify potential pressure points before they become problems.
+* The team I work on calls this role an &quot;Ambassador.&quot;
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Hold Stakeholder Interviews
+Notes:* Decide if a story will effect stakeholders in a meaningful way. If yes, schedule what we call a &quot;stakeholder interview.&quot; Who has a stake in the way this story plays out?
+* Assign one person to run the interview. Often, this will include a demo and questions in advance. The rest of the contributing team should attend, but their goal is to observe, learn, and ask questions, not to have discussion or try to persuade the interviewee. 
+* Spend as much time as possible on the stakeholders&#x27; thoughts, your time with them is limited.
+* Ultimately your design system team will make a decision on its own, but this decision should be informed by the information gathered in the stakeholder interviews. The decision may simply be a confirmation of your path forward.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Hubspot
+
+> "Your system should be owned by all." <!-- .element style="padding-left: 5.5rem;" -->
+
+[bit.ly/ds-hubspot]( http://bit.ly/ds-hubspot)
+Notes:* Alternatively, I want to point out Hubspot&#x27;s rotating design system team.
+* In this blog post, Hubspot explains that their process for creating a design system team is to dedicate hours from product team members on a rotating, 6-month schedule. 
+* The idea is that if the design system is owned by all, everyone has the opportunity to create something they&#x27;ll want to use.
+* There is a ton of context that comes from rotating onto a team while spending time as a subscriber; team members have an intimate understanding of subscriber problems.
+* If your organization can accomplish this, or something like it, I think that is a brilliant option.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Win trust by solving your subscriber’s problems.
+Notes:* No matter how you accomplish it, the trust gained by creating something useful for subscribers is priceless for a design system.
+* This has encouraged adoption of our system by giving our subscribers something they really want.
+* Nothing makes a team bump a version faster than finding out the solve to their current woes lies within the next release.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="funded"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Funded
+Notes:* If you want a team to take your design system seriously, try taking it seriously yourself.
+* Having a funded product with a committed product owner or development team will help users treat your design system as “real.”
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Funding ➡ Deliverables
+Notes:* When an organization spends money, they expect to get something in return. A budget requires a design system team to produce deliverables on a regular schedule. 
+* These deliverables are most often going to be a subscriber shipping something built with design system content.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Funding ➡ Process
+Notes:* Identifying deliverables for your design system turns into deadlines for those deliverables. &quot;I want new form components, but I need them for our summer rebuild.&quot;
+* Deadlines will often turn into project sprints and roadmaps.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![a screenshot of the pluralsight roadmap page](images/ds-pluralsight--roadmap.png)
+
+[design-system.pluralsight.com](https://design-system.pluralsight.com/roadmap/)
+Notes:* The Pluralsight design system does a really nice job of documenting their roadmap. They not only have links to their soon-to-be-built components, but there&#x27;s an open link to their project board and repository.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Where is the Money? 💰 
+
+* UX/Design <!-- .element class="fragment" -->
+* Research & Development <!-- .element class="fragment" -->
+* Tech Debt <!-- .element class="fragment" -->
+Notes:* Finding the budget to support even a part-time team of designers, developers, and project managers on your “idea” of a system may seem difficult or even impossible at first. 
+* Look for funding in interesting places. 
+* UX and design have a potential vested interest, as design systems often create consistency throughout branded experiences. 
+* If your team has an R&amp;D budget, that can be a great place to create “startup” or &quot;skunkworks&quot; kinds of projects. 
+* If your team works under one of the many models that makes time for tech debt, perhaps your design system can be built alongside refactoring of duplicate components.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![a cat, holding a stack of dollars, swatting at a human hand](https://i.chzbgr.com/full/8558902272/h158E7FB8/)
+Notes:* If there is truly no funding to be had, attempt to find people who have a personal stake in the success of a system to work on a proof of concept. However, as soon as you have a proof of concept, look for funding again.
+* Funded design systems succeed, because there is a dedicated team building and improving the system.
+* We all have side projects sitting alone in forgotten repositories. Don&#x27;t let a design system become one.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="teachable"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Teachable
+Notes:* A successful design system team does not “pass off” the system as updates happen; rather, they support subscribers throughout the adoption process. 
+* That is, your design system should be teachable.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Subscribers come first.
+Notes:* Subscriber needs, within reason, are always at the top of our priorities. 
+* Teaching people to use a design system takes time and effort. Education pays off, though, as knowledge of your design system becomes ingrained in your subscriber’s team culture.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Office Hours
+Notes:* We try to be available to pair with the developers and designers using what we’ve built. 
+* Twice a week my current team will hold &quot;office hours,&quot; where any subscriber can come hang out with us and ask questions about the system.
+* Hold your office hours in locations where pairing is easy, either online or in person.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Digestible Changelog / Release Notes
+[bit.ly/ds-release-notes](https://seesparkbox.com/foundry/writing_better_release_notes)
+Notes:* Keeping good release notes is a great starting point for sharing information between teams.
+* My very smart coworker, Kasey, has an awesome blog post about writing good release notes, check that one out.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![a screenshot of the atlassian changelog](images/ds-atlassian--changelog.png)
+
+[atlassian.design](https://atlassian.design/guidelines/handy/whats-new)
+Notes:* Atlassian&#x27;s design system has a changelog on their main page written in easy to understand, human terms. I&#x27;m a fan.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Internal Workshops <br /> & Lunch 'n' Learns
+Notes:* When your system has a new feature, present it! 
+* Every single week my team has a learning session called &quot;UI Guild&quot; across all product teams. Our team tries to share whenever we have something new.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Virtual Learning Library
+Notes:* One of the newest efforts our team has been working on is a &quot;virtual learning library,&quot; which is a repository of recorded knowledge 
+* Whenever we teach or demo something, while in meetings, or pairing, or whatever, we record it and add the link to a common repository. 
+* This way, people can teach themselves on their own, as needed. Information is no longer bottlenecked by a single person.
+* Our Library lives in our wiki, and there&#x27;s a link in every chat channel.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Subscribers come first.
+Notes:* All of these things make using a design system easier by limiting the roadblocks of learning.
+* Eventually product teams can teach one another without much intervention.
+* Being present and available to help your subscribers implement design system components shares the burden of change that often prevents humans from wanting to adopt new dependencies.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="attentive"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Attentive
+Notes:* An attentive design system is one that listens to what its subscribers are saying about it. 
+* This may sound similar to &quot;desireable&quot; or even &quot;teachable,&quot; however, being an attentive design system means really absorbing the feedback you gather.
+* Provide a path for subscribers to submit feedback and ask questions.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Listen to your customer.
+Notes:* Our design system team set up a dedicated channel in Slack and Microsoft Teams, allowing constant contact with subscribers. 
+* We’ve also added a link to our documentation site that goes to a Google Form for those who wish to provide anonymous feedback.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![a screenshot of pluarlsight's contributing page](images/ds-pluralsight--contribute.png)
+
+[design-system.pluralsight.com](https://design-system.pluralsight.com/contribute/)
+Notes:* Remember that pluralsight example? They have this bright orange &quot;open an issue&quot; button on every single page.
+* Full disclosure–Our subscribers rarely submit feedback via the form on our site, as they prefer to reach out personally via chat whenever they have questions.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Listen to your customer.
+Notes:* Office hours and stakeholder interviews are awesome ways to encourage conversation throught the entire process.
+* It&#x27;s important to listen, even if feedback is that a component is broken or doesn&#x27;t work in helpful ways.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="documented"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Documented
+Notes:* Documentation is so, so important.
+* If you skimp on documentation while building a website, people can probably still figure it out.
+* If you skimp on documentation while building a design system, nobody is going to use it at all. 
+* Having an easy-to-use UI to display the content is just as important as writing good developer documentation.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### SemVer for the Win!
+
+[semver.org](https://semver.org/)
+Notes:* Develop a plan for semantic versioning, whether it be SemVer or something unique to your team. 
+* Then, version components consistently so subscribers understand exactly what a version update means.
+* Document it well.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Name things.
+
+`(.ellipses != .ellipsis)` <!-- .element class="fragment" -->
+Notes:* Everything from component class names to color variables should be named in a thoughtful way.
+* Deprecating mistakes in naming can make a system clunky, annoying, or even unusable. 
+* Some mishaps are minor, but reduce credibility of your whole system. 
+* I like to use BEM naming conventions, because people smarter than me have written the documentation, but whatever works for your team is fine.
+* The one thing I wished I had done and will do forever in the future is develop a design system namespace from day one.
+* Document it well.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### Build a documentation site.
+Notes:* Design system teams are often small, and a good documentation website (affectionately called a “docs site”) often helps users solve their own problems without direct intervention from your team. 
+* Luckily for us, our product owner is a fantastic UX designer, as well as our biggest advocate, so our docsite looks awesome. I can&#x27;t show you, but trust me.
+* Your team may need to pull in outside resources to design documentation that is readable by humans. Spend some stakeholder interview time on this, too.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![a screenshot of accessibility documentation on the carbon design system site](/images/ds-carbon--docs.png)
+
+[carbondesignsystem.com](https://www.carbondesignsystem.com/guidelines/accessibility/overview)
+Notes:* IBM&#x27;s Carbon Design System is my current developer crush, it&#x27;s something like a gold standard for react-based design systems.
+* Carbon doesn&#x27;t have the flashiest docs site, but they do have tons and tons of written guidelines. 
+* This documentation is expansive, covering all sorts of things such as, how to implement the system, onboarding for designers and developers, best practices for accessibility, content and more, and documentation about why decisions were made.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Document it well.
+Notes:* We can all empathize with discovering the tool we think will solve all our problems only to find the documentation wanting.
+* Don&#x27;t let your design system end that way.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="adaptable"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Adaptable
+Notes:* On a design system team, some endeavors—even when thoughtfully approached—are guesswork– predicting potential brand updates, estimating upcoming component work, forecasting political decisions, or prioritizing pipeline changes. 
+* Chances are, some of our guesses are going to be wrong. 
+* What can we do to minimize the guesswork and make educated choices?
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Iterate as the need arises.
+Notes:* For every major decision, our design system team interviews stakeholders to validate assumptions we make.
+* This is especially important if your design system team is not directly implementing the designs, elements, and components in the product environment. 
+* The goal is to make well-informed, educated guesses as often as possible. Sparkbox takes great pride in our skills at forecasting and estimating engagements, so it makes sense that when we are building design systems, we aim to correctly forecast our product teams&#x27; work.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Iterate as the need arises.
+Notes:* Recently, our design system has had to grow to support many more teams building brand new React Components. 
+* We haven&#x27;t completely solved this problem, but we will have to stretch and reform the old system to meet the new needs.
+* We get better with every iteration.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      
+<blockquote>Individuals commit the sunk cost fallacy when they continue a behavior or endeavor as a result of previously invested resources (time, money or effort) (Arkes & Blumer, 1985).</blockquote>
+
+[behavioraleconomics.com](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/sunk-cost-fallacy/)
+Notes:* The Sunk Cost fallacy is public enemy number one as a design system ages.
+* We spend so much time and resources building and perfecting and documenting that when something isn&#x27;t working, we fight tooth and nail to keep it anyway. 
+* Be aware of sunk cost and be willing to pivot away from things that no longer benefit your subscribers.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Your system has to be willing to change and grow.
+Notes:* My technical director loves to tell us to &quot;fail fast.&quot; Recognize that &quot;fast&quot; for a design system can be months or longer. 
+* Attempt to validate every assumption with the developers, designers, and content managers who actually use the system you are building, and iterate on the feedback you receive.
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"id="branded"class="slide section-card"data-background="#318c9b">
+    <script type="text/template">
+      # Branded
+Notes:* Around Sparkbox, there&#x27;s an ongoing joke that a &quot;pattern library&quot; turns into a &quot;design system&quot; once you give it a name. 
+* That might not be far from the truth.
+* Our last adjective is also the most fun. Your system needs a brand.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Name Your System
+Notes:* When a design system has a name—a brand—it can become a real product. 
+* Some of the best names are drawn from punny vernacular relevant to the product your team produces. They probably even start as jokes.
+* Our ecom design system for clothing brands is named after a sewing term.
+* Hillary Clinton&#x27;s campaign design system was named &quot;Pantsuit,&quot; after her staple outfit.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ![screenshot of the shopify polaris site](images/ds-polaris.png)
+
+[polaris.shopify.com](https://polaris.shopify.com/)
+Notes:* Shopify&#x27;s &quot;Polaris&quot; design system has some truly beautiful branding, named after the guiding north star.
+* The site uses purple and gold throughout, to continue the starry theme.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Make It Official
+Notes:* Once you have a name, the next step is to brand your domain.
+* An official sounding domain, such as &quot;atlassian dot design&quot; or &quot;carbon design system dot com&quot; lends instant credibility to your design system. 
+* Plus, branded domain names are way easier to remember and thus easier for subscribers to find and use.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      
+![screenshot of the trello nachos site](images/ds-nachos.png)
+
+[design.trello.com](https://design.trello.com/)
+Notes:* Another of my favorite design system branding strategies is &quot;Nachos&quot; by Trello. 
+* The whole system is fun and friendly, with the Trello mascot, Taco the Dog leading the way. 
+* Plus, Nachos has some of the best design guidelines I&#x27;ve seen in a system. And I&#x27;ve looked at a LOT.
+* Branding your design system is a key step toward marketing.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Send Newsletters
+
+![the business cat meme](images/business-cat.jpg)
+Notes:* Consistent marketing of a design system—and its updates—helps keep subscribers engaged.
+* One way our design system encourages the adoption of version updates is by creating a &quot;business case&quot; for every major or minor version.
+* We send out email and messaging announcements with links to our release notes, a quick overview of what’s new and what’s changed, and an answer to the question, &quot;Why Should I Update?&quot; Writing a strong, persuasive answer to this question for every release has improved our subscriber buy-in quite a bit.
+</script>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ## Maintain Interest with Marketing
+Notes:* notes
+</script>
+  </section>
+
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### ✨ Take the 2019 Sparkbox Design Systems Survey ✨
+[bit.ly/sb-2019-survey](https://www.surveymonkey.com/r/V2SF3HL)
+Notes:* I&#x27;m supposed to tell you to take this survey if you&#x27;re working in or around design systems. If you&#x27;d like to be a part of this year&#x27;s data, check it out!
+</script>
+  </section>
+  <section id="closing"class="slide intros">
+    
+      <h5 class="util-margin-b050">Thanks!</h5>
+<div class="intro">
+  <img src="images/cat.svg" width="200" alt="An illustration of a smiling cat."/>
+  <h2 class="name">Catherine Meade</h2>
+  <h3 class="job-title util-margin-t0">Developer, Sparkbox</h3>
+  <h4 class="twitter"><a href="https://twitter.com/catheraaine" target="_blank">@catheraaine</a> | cat@heysparkbox.com</h4>
+  <h4 class="twitter"><a href="https://github.com/catheraaine/keeping-subscribers-engaged-in-your-design-system" target="_blank">bit.ly/meade-design-systems</a></h4>
+</div>
+<aside class="notes">* That&#x27;s all I&#x27;ve got. Here&#x27;s my thank you slide.
+</aside>
+  </section>
+  <section data-markdown data-separator-notes="^Notes:"class="slide ">
+    <script type="text/template">
+      ### ✨ Resources ✨ <!-- .element style="font-size: 85%" -->
+Slide Repository | [bit.ly/meade-design-systems](https://github.com/catheraaine/keeping-subscribers-engaged-in-your-design-system)
+
+Design Systems Survey 2018 | [designsystemssurvey.seesparkbox.com](https://designsystemssurvey.seesparkbox.com/)
+
+Take the 2019 Design Systems Survey | [bit.ly/sb-2019-survey](https://www.surveymonkey.com/r/V2SF3HL)
+Notes:</script>
+  </section>
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions
+        width: 1280,
+        height: 720,
+    
+        // Display controls in the bottom right corner
+        controls: false,
+    
+        // Display a presentation progress bar
+        progress: true,
+    
+        // Display the page number of the current slide
+        slideNumber: true,
+    
+        // Push each slide change to the browser history
+        history: true,
+    
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+    
+        // Enable the slide overview mode
+        overview: true,
+    
+        // Vertical centering of slides
+        center: true,
+    
+        // Enables touch navigation on devices with touch input
+        touch: true,
+    
+        // Loop the presentation
+        loop: false,
+    
+        // Change the presentation direction to be RTL
+        rtl: false,
+    
+        // Turns fragments on and off globally
+        fragments: true,
+    
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+    
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+    
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+    
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+    
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+    
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+    
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+    
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+    
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+    
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+    
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+    
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+    
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+    
+        // Optional reveal.js plugins
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          ]
+      });
+    </script>
+  </body>
+</html>
